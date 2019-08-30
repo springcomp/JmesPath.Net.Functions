@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\..\JmesPath.Net\tools\jmespathnet.compliance\AssemblyQualifiedNameParser.cs" Link="AssemblyQualifiedNameParser.cs" />
+    <Compile Include="..\..\JmesPath.Net\tools\jmespathnet.compliance\CommandLine.cs" Link="CommandLine.cs" />
+    <Compile Include="..\..\JmesPath.Net\tools\jmespathnet.compliance\Compliance.cs" Link="Compliance.cs" />
+    <Compile Include="..\..\JmesPath.Net\tools\jmespathnet.compliance\ComplianceResult.cs" Link="ComplianceResult.cs" />
+    <Compile Include="..\..\JmesPath.Net\tools\jmespathnet.compliance\ConsoleEx.cs" Link="ConsoleEx.cs" />
+    <Compile Include="..\..\JmesPath.Net\tools\jmespathnet.compliance\Options.cs" Link="Options.cs" />
+    <Compile Include="..\..\JmesPath.Net\tools\jmespathnet.compliance\Program.cs" Link="Program.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="JmesPath.Net" Version="1.0.125" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <SourceFiles Include="$(MSBuildThisFileDirectory)..\..\src\functions\bin\$(Configuration)\**\JmesPath.Net.Functions.dll" />
+  </ItemGroup>
+  <Target Name="_CopyFunctionsAssembly" BeforeTargets="Build">
+    <Copy SourceFiles="@(SourceFiles)" DestinationFolder="$(MSBuildThisFileDirectory)\bin\$(Configuration)\$(TargetFramework)" />
+  </Target>
+
+</Project>

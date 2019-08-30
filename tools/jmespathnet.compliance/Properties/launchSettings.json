@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "jmespathnet.compliance": {
+      "commandName": "Project",
+      "commandLineArgs": "-t .\\tests\\ --register \"DevLab.JmesPath.Functions.Registrations, JmesPath.Net.Functions\"",
+      "workingDirectory": "E:\\Projects\\JmesPath.Net.Functions"
+    }
+  }
+}

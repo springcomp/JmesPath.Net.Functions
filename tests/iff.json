@@ -1,0 +1,41 @@
+[
+    {
+        "given": {},
+        "cases": [
+            {
+                "expression": "iff(`true`, `true`, `false`)",
+                "result": true
+            },
+            {
+                "expression": "iff(`false`, `true`, `false`)",
+                "result": false
+            }
+        ]
+    },
+    {
+        "given": {
+            "eval": true,
+            "true": "truthy",
+            "false": "falsy"
+        },
+        "cases": [
+            {
+                "expression": "iff(eval, true, false)",
+                "result": "truthy"
+            }
+        ]
+    },
+    {
+        "given": {
+            "eval": false,
+            "true": "truthy",
+            "false": "falsy"
+        },
+        "cases": [
+            {
+                "expression": "iff(eval, true, false)",
+                "result": "falsy"
+            }
+        ]
+    }
+]

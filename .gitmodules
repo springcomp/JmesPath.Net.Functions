@@ -1,0 +1,4 @@
+[submodule "JmesPath.Net"]
+	path = JmesPath.Net
+	url = https://github.com/jdevillard/JmesPath.Net
+	branch = master

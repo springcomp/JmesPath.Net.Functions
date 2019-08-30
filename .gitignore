@@ -1,0 +1,14 @@
+[Bb]in/
+[Ob]bj/
+
+\.vs/
+*\netstandard[1-3]\.[0-9]/
+*\netcoreapp[1-3]\.[0-9]/
+
+*\.assets\.json
+*\.cache
+*\.dgspec\.json
+*\.dll
+*\.g\.props
+*\.g\.targets
+*\.pdb

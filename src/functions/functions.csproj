@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <AssemblyName>JmesPath.Net.Functions</AssemblyName>
+    <AssemblyTitle>JmesPath.Net.Functions</AssemblyTitle>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="JmesPath.Net" Version="1.0.125" />
+  </ItemGroup>
+
+</Project>
