@@ -4,7 +4,7 @@ This repository contains unofficial functions for use with [JmesPath.Net](https:
 
 ## Documentation
 
-Please, consult the [Wiki](/springcomp/JmesPath.Net.Functions/wiki)
+Please, consult the [Wiki](https://github.com/springcomp/JmesPath.Net.Functions/wiki)
 
 
 ## Tests
